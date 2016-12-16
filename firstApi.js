@@ -19,7 +19,7 @@ var getUser = require('./middlewares/getUser');
 var login = require('./middlewares/login');
 
 
-app.get('/user',getUser);
+app.get('/',getUser);
 app.post('/user',addUser);
 app.put('/user',updateUser);
 app.delete('/user', deleteUser);
